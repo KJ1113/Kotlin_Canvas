@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="76dp"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/canvas" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="148dp"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="220dp"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img3" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="288dp"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ssafy.hwandroidui08_gumi_6_yoonkijae.DrawSample
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/red"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/blue"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toEndOf="@+id/imageButton7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
